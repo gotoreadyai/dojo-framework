@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOJO Framework - Powerful AI Automation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #00d4ff, #0099ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 2rem;
+        }
+
+        .hero {
+            padding: 4rem 2rem;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+        }
+
+        .cta-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, #00d4ff, #0099ff);
+            color: #000;
+            font-weight: bold;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(0, 212, 255, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #00d4ff;
+        }
+
+        .feature p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.95rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            padding: 3rem 2rem;
+            text-align: center;
+            background: rgba(0, 212, 255, 0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-item h4 {
+            font-size: 2rem;
+            color: #00d4ff;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        footer {
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-container {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .logo {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">⚡ DOJO</div>
+        <p class="tagline">Framework for Autonomous AI Agents & Automation</p>
+    </header>
+
+    <section class="hero">
+        <h1>Build Intelligent Workflows in Minutes</h1>
+        <p>DOJO Framework empowers you to create autonomous AI agents that execute complex tasks with precision and reliability.</p>
+        <div class="cta-container">
+            <a href="https://github.com/dojo-way/dojo-framework" class="btn btn-primary">Get Started →</a>
+            <a href="https://github.com/dojo-way/dojo-framework#documentation" class="btn btn-secondary">Documentation</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>🤖 Autonomous Agents</h3>
+            <p>Create AI agents that work independently, make decisions, and execute tasks without manual intervention.</p>
+        </div>
+        <div class="feature">
+            <h3>⚙️ Workflow Automation</h3>
+            <p>Orchestrate complex business processes with simple, declarative configurations and scheduling.</p>
+        </div>
+        <div class="feature">
+            <h3>🔗 API Integration</h3>
+            <p>Seamlessly integrate with external services and APIs to extend your agent capabilities.</p>
+        </div>
+        <div class="feature">
+            <h3>📊 Monitoring & Logs</h3>
+            <p>Track execution, debug issues, and optimize performance with comprehensive logging and analytics.</p>
+        </div>
+        <div class="feature">
+            <h3>🚀 Production Ready</h3>
+            <p>Built for scale with reliability, error handling, and security best practices included.</p>
+        </div>
+        <div class="feature">
+            <h3>💡 Easy to Extend</h3>
+            <p>Flexible architecture that grows with your needs. Create custom tools and workers with ease.</p>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-item">
+            <h4>v0.6.3</h4>
+            <p>Latest Release</p>
+        </div>
+        <div class="stat-item">
+            <h4>Open Source</h4>
+            <p>MIT License</p>
+        </div>
+        <div class="stat-item">
+            <h4>Active</h4>
+            <p>Community Driven</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 DOJO Framework. Built with ⚡ for AI Automation.</p>
+        <p><a href="https://github.com/dojo-way/dojo-framework" style="color: #00d4ff; text-decoration: none;">View on GitHub</a></p>
+    </footer>
+</body>
+</html>
